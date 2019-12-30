@@ -94,21 +94,23 @@ end
 def movies_with_directors_set(source)
   
   array = [] 
+  
+  
   # binding.pry
   
   i = 0 
   while i < source.length 
   movies = source[i][:movies]
   name = source[i][:name]
-  array << name 
-  j = 0 
-  while j < movies.length
-  array << movies[j]
-  j += 1 
-end 
-  i += 1 
-end 
-return array 
+#   array << name 
+#   j = 0 
+#   while j < movies.length
+#   array << movies[j]
+#   j += 1 
+# end 
+#   i += 1 
+# end 
+# return array 
 
 # find movies array .. stuck it into a new array 
 # return AoAs has all director movies and each movie need o have name 
