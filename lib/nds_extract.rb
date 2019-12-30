@@ -102,15 +102,18 @@ def movies_with_directors_set(source)
   while i < source.length 
   movies = source[i][:movies]
   name = source[i][:name]
+  
+  set = movies_with_director_key(name, movies)
+  array << set 
 #   array << name 
 #   j = 0 
 #   while j < movies.length
 #   array << movies[j]
 #   j += 1 
 # end 
-#   i += 1 
-# end 
-# return array 
+  i += 1 
+end 
+return array 
 
 # find movies array .. stuck it into a new array 
 # return AoAs has all director movies and each movie need o have name 
