@@ -92,12 +92,15 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
+  
   array = [] 
   # binding.pry
   
   i = 0 
   while i < source.length 
   movies = source[i][:movies]
+  name = source[i][:movies][:name]
+  array << name 
   j = 0 
   while j < movies.length
   array << movies[j]
