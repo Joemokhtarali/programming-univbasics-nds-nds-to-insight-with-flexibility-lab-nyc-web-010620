@@ -94,7 +94,7 @@ end
 def movies_with_directors_set(source)
   
   array = [] 
-  binding.pry
+  # binding.pry
   
   i = 0 
   while i < source.length 
